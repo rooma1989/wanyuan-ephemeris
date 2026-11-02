@@ -1,0 +1,22 @@
+{
+  "name": "wanyuan-ephemeris",
+  "version": "0.1.0",
+  "description": "Stateless HTTP/JSON microservice for planet positions and house cusps (Swiss Ephemeris, Moshier). Part of 万愿 WANYUAN.",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "sweph": "2.10.3-8"
+  },
+  "devDependencies": {
+    "astronomy-engine": "2.1.19"
+  }
+}
